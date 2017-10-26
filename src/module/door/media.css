@@ -1,0 +1,146 @@
+@media only screen and (min-width:320px) and (max-width:768px) {
+	.minhead{
+		display: block;
+	}
+	.head{
+		display: none;
+	}
+	.canvasText{
+		display: none;
+	}
+	.minTeaForYou{
+		display: block!important;
+	}
+	.content .teaForYou{
+		height: 400px;
+	}
+	.content .teaForYou .contactLogo i{
+		font-size: 30px;
+	}
+	.content .AboutMe .textTitle{
+		font-size: 30px;
+	}
+	.content .AboutMe p{
+		margin: 0;
+		font-size: 13px;
+	}
+	.content .AboutMe section{
+		width: 90%;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		margin-left: 5%;
+		margin-bottom: 20px;
+	}
+	.content .AboutMe section .img{
+		border: none;
+		width: 80px;
+		height: 80px;
+		box-shadow: none;
+		margin-bottom: 0;
+	}
+	.content .AboutMe .information .img{
+		background: url(./images/idnetity.gif);
+        background-size: cover;
+	}
+	.content .AboutMe .job .img{
+		background: url(./images/work.gif);
+        background-size: cover;
+	}
+	.content .AboutMe .dream .img{
+		background: url(./images/dream.gif);
+        background-size: cover;
+	}
+	.content .myGoal{
+		height: 300px;
+	}
+	.content .myGoal p:first-child{
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.content .myGoal p:last-child{
+		font-size: 15px;
+	}
+	.content .travelGoal h3{
+		font-size: 20px;
+	}
+	.content .travelGoal h4{
+		font-size: 13px;
+	}
+	.content .travelGoal .des p{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-device-width:320px) and (max-device-width:768px) {
+	.minhead{
+		display: block;
+	}
+	.head{
+		display: none;
+	}
+	.canvasText{
+		display: none;
+	}
+	.minTeaForYou{
+		display: block!important;
+	}
+	.content .teaForYou{
+		height: 400px;
+	}
+	.content .teaForYou .contactLogo i{
+		font-size: 30px;
+	}
+	.content .AboutMe .textTitle{
+		font-size: 30px;
+	}
+	.content .AboutMe p{
+		margin: 0;
+		font-size: 13px;
+	}
+	.content .AboutMe section{
+		width: 90%;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		margin-left: 5%;
+		margin-bottom: 20px;
+	}
+	.content .AboutMe section .img{
+		border: none;
+		width: 80px;
+		height: 80px;
+		box-shadow: none;
+		margin-bottom: 0;
+	}
+	.content .AboutMe .information .img{
+		background: url(./images/idnetity.gif);
+        background-size: cover;
+	}
+	.content .AboutMe .job .img{
+		background: url(./images/work.gif);
+        background-size: cover;
+	}
+	.content .AboutMe .dream .img{
+		background: url(./images/dream.gif);
+        background-size: cover;
+	}
+	.content .myGoal{
+		height: 300px;
+	}
+	.content .myGoal p:first-child{
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.content .myGoal p:last-child{
+		font-size: 15px;
+	}
+	.content .travelGoal h3{
+		font-size: 20px;
+	}
+	.content .travelGoal h4{
+		font-size: 13px;
+	}
+	.content .travelGoal .des p{
+		font-size: 12px;
+	}
+}

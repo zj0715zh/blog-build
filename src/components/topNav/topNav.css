@@ -1,0 +1,16 @@
+@media only screen and (min-width:320px) and (max-width:768px) {
+	.minhead{
+		display: block;
+	}
+	.head{
+		display: none;
+	}
+}
+@media only screen and (min-device-width:320px) and (max-device-width:768px) {
+	.minhead{
+		display: block;
+	}
+	.head{
+		display: none;
+	}
+}

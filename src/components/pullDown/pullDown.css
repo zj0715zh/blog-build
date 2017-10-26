@@ -1,0 +1,36 @@
+.pullDown{
+    min-width: 250px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #99cc33;
+}
+.pullDown .tagList{
+	background: #ededed;
+	text-align: center;
+	width: 100%;
+	min-width: 200px;
+	height: 0;
+	transition: height 1s ease;
+	-webkit-transition: height 1s ease;
+	overflow: hidden;
+}
+.pullDown .tagList.open{
+	height: 60px;
+}
+.pullDown .tagList a{
+	display: inline-block;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 10px 10px;
+	font-size: 14px;
+	background: #7bbcff;
+}
+.pullDown .upDown{
+	text-align: center;
+	border-top: solid 1px #fff;
+}
+.pullDown .upDown:hover,.pullDown .upDown:active{
+	cursor: pointer;
+	opacity: 0.6;
+	background: #ff9900;
+}

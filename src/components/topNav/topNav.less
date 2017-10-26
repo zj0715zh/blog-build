@@ -1,0 +1,74 @@
+/*支持less、sass,需引入相应的包，详细请看http://blog.csdn.net/itkingone/article/details/74729508*/
+.head,.minhead{
+	width: 100%;
+	background: #99cc33;
+	color: #fff;
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	left: 0;
+	transition: all 0.5s;
+	z-index: 100;
+	i{
+		font-size: 24px;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.head:hover{
+	opacity: 0.8;
+}
+.head_main{
+	width: 90%;
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+}
+.minhead{
+	display: none;
+	background: #99cc33;
+	box-shadow: 1px 1px 1px #ccff33;
+	.head_main{
+		font-size: 18px;
+		text-align: center;
+		width: 90%;
+	}
+}
+.nav li{
+	float: left;
+	list-style: none;
+	padding: 0 20px;
+	font-size: 16px;
+	a{
+		color:#fff;
+	}
+	i{
+		font-size: 18px;
+		margin-right: 6px;
+	}
+}
+.nav li.active{
+	background: #fff;
+	a{
+		color: #000;
+	}
+}
+.heroRank a{
+	color: #fff;
+}
+.subNav{
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	li{
+		text-align: center;
+		border-bottom: solid 1px #666;
+	}
+	a{
+		color: #fff;
+		display: block;
+	}
+	a:active{
+		background: #666;
+	}
+}
+

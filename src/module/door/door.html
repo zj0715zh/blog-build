@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name=”renderer” content=”webkit” />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>茶社门面</title>
+  <style type="text/css">
+  	.Love{
+  		position: absolute;width: 100%;height: 100%;z-index: -1;top: 0;left: 0;opacity: 0;
+  		transition: all 0.5s ease;
+  		/*background: red;*/
+  	}
+  	.Love.lian{
+  		z-index: 100000;
+		opacity: 1
+  	}
+	.yuan{
+		position: absolute;z-index: 1000;top: 40%;width: 100%;text-align: center;
+		font-size: 30px;
+		background: -webkit-linear-gradient(left, #fff , blue);     /* 背景色渐变 */
+  		-webkit-background-clip: text;         /* 规定背景的划分区域 */
+  		-webkit-text-fill-color: transparent;  /* 防止字体颜色覆盖 */
+  		cursor: pointer;
+	}
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<!-- <div class="yuan">亲，请点击</div> -->
+<iframe src="http://t.cn/R9DHlgz" class="Love"></iframe>
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+		var yuan = document.querySelector('.yuan');
+		var Canvas = document.querySelector('.Love');
+		yuan.addEventListener('click',function(){
+			Canvas.setAttribute('class','Love lian');
+		})
+	}
+</script>
+</html>

@@ -1,0 +1,67 @@
+.webloglist{
+	padding: 0 20px;
+    min-width: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+	.loglist{
+		.logLink{
+			display: block;
+		}
+		.item{
+			list-style: none;
+			padding: 30px 30px 25px;
+			background: #fff;
+			margin-top: 30px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+			.title{
+				color: #333;
+			    margin: 0;
+			    padding: 0;
+			    font-weight: 300;
+			    font-size: 24px;
+			}
+			.tags{
+				margin: 10px 0;
+				a{
+					display: inline-block;
+					color: #fff;
+					padding: 3px 10px;
+					font-size: 14px;
+					background: #7bbcff;
+					vertical-align: top;
+				}
+				i{
+					font-size: 20px;
+					color: #666;
+				}
+			}
+			.text_content{
+			    color: #666;
+			    line-height: 1.6em;
+			    position: relative;
+			    font-size: 16px;
+			    overflow: hidden;
+			    margin: 5px 0 20px 0;
+			}
+			.info{
+			    i{
+			    	font-size: 20px;
+			    	color: #c0c0c0;
+			    	margin-left: 10px;
+			    	span{
+			    		font-size: 16px;
+			    	}
+			    }
+			}
+		}
+		.item:hover{
+			box-shadow: 2px 2px 5px #9c3;
+		    transform: scale(1.05);
+		    -webkit-transform: scale(1.02);
+		}
+	}
+}

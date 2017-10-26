@@ -1,0 +1,355 @@
+/*支持less、sass,需引入相应的包，详细请看http://blog.csdn.net/itkingone/article/details/74729508*/
+body{
+	background: url('./images/bg.jpg') center center;
+	background-size: cover;
+	width: 100%;
+	font-family: Open Sans, Tahoma, Arial, Roboto, Droid Sans, Helvetica Neue, Droid Sans Fallback, Heiti SC, Hiragino Sans GB, Simsun, sans-self;
+}
+.head,.minhead{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	position: fixed;
+	height: 60px;
+	line-height: 60px;
+	left: 0;
+	transition: all 0.5s;
+	z-index: 100;
+	i{
+		font-size: 24px;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+.head:hover{
+	background: rgba(0, 0, 0, 0.9);
+}
+.head_main{
+	width: 80%;
+	margin: 0 auto;
+	height: 60px;
+	line-height: 60px;
+}
+.minhead{
+	display: none;
+	background: rgba(0, 0, 0, 0.8);
+	box-shadow: 1px 1px 1px #ededed;
+	.head_main{
+		font-size: 18px;
+		text-align: center;
+		width: 90%;
+	}
+}
+.nav li{
+	float: left;
+	list-style: none;
+	padding: 0 20px;
+	font-size: 16px;
+	a{
+		color:#fff;
+	}
+	i{
+		font-size: 18px;
+		margin-right: 6px;
+	}
+}
+.heroRank a{
+	color: #fff;
+}
+.subNav{
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	li{
+		text-align: center;
+		border-bottom: solid 1px #666;
+	}
+	a{
+		color: #fff;
+		display: block;
+	}
+	a:active{
+		background: #666;
+	}
+}
+.content{
+	position: relative;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	.teaForYou{
+		background: rgba(0, 0, 0, 0.5);
+		height: 600px;
+		.canvasText{
+			#DrawText{
+				width: 700px;
+				height: 400px;
+				opacity: 1;
+				animation: showText ease 2s;
+				-webkit-animation: showText ease 2s;
+			}
+		}
+		.minTeaForYou{
+			color: #fff;
+			font-size: 30px;
+			display: none;
+		    width: 100%;
+		    height: 280px;
+		    line-height: 280px;
+		}
+		.contactLogo{
+			margin:0px auto;
+			width: 50%;
+			position: relative;
+			overflow: hidden;
+			height: 65px;
+			a{
+				display: inline-block;
+				width: 25%;
+				float: left;
+				position: absolute;
+			}
+			.github{
+				right:75%;
+				animation: showLogoGithub ease .8s;
+				-webkit-animation: showLogoGithub ease .8s;
+			}
+			.blog{
+				right:50%;
+				animation: showLogoBlog ease 1s;
+				-webkit-animation: showLogoBlog ease 1s;
+			}
+			.weixin{
+				right:25%;
+				animation: showLogoWeixin ease 1.2s;
+				-webkit-animation: showLogoWeixin ease 1.2s;
+			}
+			.qq{
+				right:0%;
+				animation: showLogoQQ ease 1.4s;
+				-webkit-animation: showLogoQQ ease 1.4s;
+			}
+			i{
+				color: #fff;
+				font-size: 57px;
+				display: inline-block;
+			}
+		}
+	}
+	.AboutMe{
+		background: rgba(255, 255, 255, 0.7);
+		width: 100%;
+		.textTitle{
+			widows: 100%;
+			text-align: center;
+			font-size: 45px;
+			line-height: 100px;
+			color: #444;
+		}
+		p{
+			text-align: left;
+		}
+		section{
+			float: left;
+		    width: 33.3333%;
+		    padding: 2%;
+		    line-height: 1.6em;
+		    .img{
+		    	margin: 0 auto 30px;
+			    text-align: center;
+			    border-radius: 100px;
+			    width: 120px;
+			    height: 120px;
+			    border: 20px solid #fff;
+			    box-shadow: 0 0 1px #333;
+		    }
+		}
+		.inforDetail{
+			max-width: 1200px;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		.information{
+		    .img{
+		        background: url(./images/idnetity.jpg);
+		        background-size: cover;
+		    }
+		}
+		.information:hover{
+			.img{
+		        background: url(./images/idnetity.gif);
+		        background-size: cover;
+		    }
+		}
+		.job{
+			.img{
+				background: url(./images/work.jpg);
+				background-size: cover;
+			}
+		}
+		.job:hover{
+			.img{
+				background: url(./images/work.gif);
+				background-size: cover;
+			}
+		}
+		.dream{
+			.img{
+				background: url(./images/dream.jpg);
+				background-size: cover;
+			}
+		}
+		.dream:hover{
+			.img{
+				background: url(./images/dream.gif);
+				background-size: cover;
+			}
+		}
+	}
+	.myGoal{
+		background: url(./images/mitor.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+        p:first-child{
+        	margin: 0;
+			color: #fff;
+			line-height: 150px;
+			font-size: 45px;
+        }
+        p:last-child{
+			margin: 0;
+			color: #fff;
+			font-size: 25px;
+        }
+	}
+	.travelGoal{
+		background: rgba(255, 255, 255, 0.85);
+        width: 100%;
+        padding: 2% 0;
+        h3{
+			color: #333;
+			font-size: 35px;
+			font-weight: 300;
+        }
+        h4{
+        	color: #666;
+        	font-size: 25px;
+        	font-weight: 300;
+        }
+        .des{
+        	width: 80%;
+        	margin: 0 auto;
+	        p{
+	        	color: #333;
+	        	font-size: 20px;
+	        	text-align: left;
+	        }
+        }
+	}
+}
+
+
+
+.contactMe {
+  background: #363941;
+  overflow: hidden;
+  color: #ccc;
+  position: relative; }
+
+.contactMe p{
+	text-align: left;
+}
+.contactMe h3{
+    font-size: 66px;
+    font-weight: 300;
+    margin: 40px 0 15px;
+    text-align: center;
+}
+.contactMe h4{
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contactMe .btn {
+  padding: 8px 0;
+  width: 140px; }
+
+.contactMe input,
+.contactMe textarea {
+  color: #ccc;
+  border: none;
+  background: #484b53;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 90%; }
+
+.contactMe input:disabled,
+.contactMe textarea:disabled {
+  color: #999; }
+
+.contactMe textarea {
+  width: 95%;
+  height: 8em; }
+
+.index-content-tips {
+  margin-left: 10px;
+  color: #A5A5A5;
+  opacity: 0;
+  transition: all 0.8s ease-out; }
+.index-content-box {
+  margin: 40px auto;
+  padding: 40px 0 40px 3.5%;
+  max-width: 1200px;
+  overflow: hidden;
+  border-top: 1px solid #484b53; }
+
+.index-content-boxblock {
+  overflow: hidden; }
+
+.index-content-message {
+  box-sizing: border-box;
+  padding: 5px; }
+
+.index-content-boxhalf {
+  float: left;
+  width: 50%; }
+
+
+
+/*移动端菜单动画*/
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-active {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+@keyframes showText{
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+@keyframes showLogoGithub{
+	0%{right: -100%}
+	100%{right: 75%}
+}
+@keyframes showLogoBlog{
+	0%{right: -100%}
+	100%{right: 50%}
+}
+@keyframes showLogoWeixin{
+	0%{right: -100%}
+	100%{right: 25%}
+}
+@keyframes showLogoQQ{
+	0%{right: -100%}
+	100%{right: 0%}
+}
+
+

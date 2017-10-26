@@ -1,0 +1,88 @@
+{
+	"list": [{
+		"address": "上海黄浦区城区上海路888号44弄",
+		"orderInfo": {
+			"createOrderTime": "2017-07-14 18:41:54",
+			"orderId": 3879,
+			"orderNo": "PPD201707140000429",
+			"orderStatus": -1,
+			"orderStatusTxt": "取消",
+			"showBtn": 0
+		},
+		"skuInfo": {
+			"skuDesc": "佳能（Canon）EOS 80D 单反机身 黑色官方标配",
+			"skuId": 968,
+			"skuImgUrl": "https://file11info.ppdai.com/81de66ff0f29456484483c9c11f1a437.jpg",
+			"skuName": "黑色官方标配",
+			"skuSaleUrl": "/product/968"
+		}
+	}, {
+		"address": "上海黄浦区城区上海路888号44弄",
+		"orderInfo": {
+			"createOrderTime": "2017-07-14 18:41:54",
+			"orderId": 3879,
+			"orderNo": "PPD201707140000429",
+			"orderStatus": 7,
+			"orderStatusTxt": "取消",
+			"showBtn": 0
+		},
+		"skuInfo": {
+			"skuDesc": "佳能（Canon）EOS 80D 单反机身 黑色官方标配",
+			"skuId": 968,
+			"skuImgUrl": "https://file11info.ppdai.com/81de66ff0f29456484483c9c11f1a437.jpg",
+			"skuName": "黑色官方标配",
+			"skuSaleUrl": "/product/968"
+		}
+	}, {
+		"address": "上海黄浦区城区上海路888号44弄",
+		"orderInfo": {
+			"createOrderTime": "2017-07-14 18:41:54",
+			"orderId": 3879,
+			"orderNo": "PPD201707140000429",
+			"orderStatus": 7,
+			"orderStatusTxt": "取消",
+			"showBtn": 0
+		},
+		"skuInfo": {
+			"skuDesc": "佳能（Canon）EOS 80D 单反机身 黑色官方标配",
+			"skuId": 968,
+			"skuImgUrl": "https://file11info.ppdai.com/81de66ff0f29456484483c9c11f1a437.jpg",
+			"skuName": "黑色官方标配",
+			"skuSaleUrl": "/product/968"
+		}
+	}, {
+		"address": "上海黄浦区城区上海路888号44弄",
+		"orderInfo": {
+			"createOrderTime": "2017-07-14 18:41:54",
+			"orderId": 3879,
+			"orderNo": "PPD201707140000429",
+			"orderStatus": 7,
+			"orderStatusTxt": "取消",
+			"showBtn": 0
+		},
+		"skuInfo": {
+			"skuDesc": "佳能（Canon）EOS 80D 单反机身 黑色官方标配",
+			"skuId": 968,
+			"skuImgUrl": "https://file11info.ppdai.com/81de66ff0f29456484483c9c11f1a437.jpg",
+			"skuName": "黑色官方标配",
+			"skuSaleUrl": "/product/968"
+		}
+	}, {
+		"address": "上海黄浦区城区上海路888号44弄",
+		"orderInfo": {
+			"createOrderTime": "2017-07-14 18:41:54",
+			"orderId": 3879,
+			"orderNo": "PPD201707140000429",
+			"orderStatus": 7,
+			"orderStatusTxt": "取消",
+			"showBtn": 0
+		},
+		"skuInfo": {
+			"skuDesc": "佳能（Canon）EOS 80D 单反机身 黑色官方标配",
+			"skuId": 968,
+			"skuImgUrl": "https://file11info.ppdai.com/81de66ff0f29456484483c9c11f1a437.jpg",
+			"skuName": "黑色官方标配",
+			"skuSaleUrl": "/product/968"
+		}
+	}]
+}
