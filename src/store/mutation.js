@@ -1,31 +1,29 @@
-export function SET_ACTIVE_TYPE (state, { type }) {
-  state.activeType = type
-}
-
-export function SET_LIST (state, { type, ids }) {
-  state.lists[type] = ids
-}
-
-export function SET_ITEMS (state, { items }) {
-  items.forEach(item => {
-    if (item) {
-      Vue.set(state.items, item.id, item)
-    }
-  })
-}
 
 export function SET_USER (state, { user }) {
   Vue.set(state.users, user.id, user)
 }
 
-export function SET_COUNTS_TOP (state, { number }) {
-  state.counts.top = number
+export function set_isLoading (state,{ isLoading }) {
+  state.isLoading = isLoading;
 }
 
-export function SET_COUNTS_ASK (state, { number }) {
-  state.counts.ask = number
+export function set_isCollapse (state,{ isCollapse }) {
+  if(isCollapse==true){
+    state.isCollapse = isCollapse;
+  }else{
+    state.isCollapse = !state.isCollapse;
+  }
 }
-
-export function SET_WEBLOG_LIST (state, { list }) {
-  state.webloglist = list
+export function set_BreadcrumbList (state,{ BreadcrumbList }) {
+  if(BreadcrumbList){
+    state.BreadcrumbList = BreadcrumbList;
+  }else{
+    state.BreadcrumbList = [];
+  }
+}
+export function set_states (state,{ key,value }) {
+  state.key = value;
+}
+export function set_goodsInfo (state,{ goodsInfo }) {
+  state.goodsInfo = goodsInfo;
 }

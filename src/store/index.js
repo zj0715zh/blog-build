@@ -10,24 +10,20 @@ const debug = process.env.NODE_ENV !== 'production'
 
 export default new Vuex.Store({
   state: {
-    activeType: null,
-    items: {},
-    users: {},
-    counts: {
-      top: 20,
-      new: 20,
-      show: 15,
-      ask: 15,
-      job: 15
-    },
-    lists: {
-      top: [],
-      new: [],
-      show: [],
-      ask: [],
-      job: []
-    },
+    isCollapse: true,
     webloglist:[],
+    userId:'',
+    isLoading:false,
+    goodsInfo:{
+        typeOne: '',
+        typeTwo:'',
+        name: 'dadas',
+        brand:'',
+        saleStartDate:'',
+        saleEndDate:'',
+        goodsDesc:''
+    },
+    BreadcrumbList:[{name:'商品管理',href:'/weblog'},{name:'售后管理',href:'/logdetail/12'}]
   },
   mutations,	
   actions,

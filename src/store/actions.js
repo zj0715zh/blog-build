@@ -1,4 +1,5 @@
-import { fetchItems, fetchIdsByType, fetchUser, fetchWebLogs } from './fetch'
+// import { fetchItems, fetchIdsByType, fetchUser, fetchWebLogs } from './fetch'
+import * as fetchs from './fetch'
 
 const LOAD_MORE_STEP = 10
 
@@ -7,11 +8,6 @@ export function FETCH_LIST_DATA ({ commit, dispatch, state }, { type }) {
   return fetchIdsByType(type)
     .then(ids => commit('SET_LIST', { type, ids }))
     .then(() => dispatch('ENSURE_ACTIVE_ITEMS'))
-}
-
-export function LOAD_MORE_ITEMS ({ dispatch, state }) {
-  state.counts[state.activeType] += LOAD_MORE_STEP
-  return dispatch('ENSURE_ACTIVE_ITEMS')
 }
 
 export function ENSURE_ACTIVE_ITEMS ({ dispatch, getters }) {
@@ -27,16 +23,13 @@ export function FETCH_ITEMS ({ commit, state }, { ids }) {
     : Promise.resolve()
 }
 
-export function FETCH_USER ({ commit, state }, { id }) {
-  return state.users[id]
-    ? Promise.resolve(state.users[id])
-    : fetchUser(id).then(user => commit('SET_USER', { user }))
+export function fetch_goodsList ({ commit, state }, { type }) {
+  return fetchs.getGoodsList().then(list=>console.log(list)).catch(response=>console.log('jjj'))
 }
 
-export function UPDATE_COUNTS ({ commit, state }) {
-  return state.counts.top
-}
-
-export function fetch_webLogs ({ commit, state }, { type }) {
-  return fetchWebLogs(type).then(list=>commit('SET_WEBLOG_LIST', { list }))
+export function clear_session ({ commit, state }, { sessionList }) {
+  let St = window.sessionStorage;
+  for(let i=0;i<sessionList.length;i++){
+    St.removeItem(sessionList[i]);
+  }
 }

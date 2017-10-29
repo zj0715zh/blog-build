@@ -1,19 +1,12 @@
-export function fetchIdsByType (type) {
-  return fetch(`${type}stories`)
-}
-
-export function fetchItem (id) {
-  return fetch(`item/${id}`)
-}
-
-export function fetchItems (ids) {
-  return Promise.all(ids.map(id => fetchItem(id)))
-}
-
-export function fetchUser (id) {
-  return fetch(`user/${id}`)
-}
+//此JS文件专门用于接口请求
+import axios from 'axios'
+import promise from 'es6-promise'
+promise.polyfill()
 
 export function fetchWebLogs (type) {
-  return this.$ajax.get('/weblog/fetchWebLogs?type='+type)
+  return axios.get('/weblog/fetchWebLogs?type='+type)
+}
+
+export function getGoodsList (type) {
+  return axios.get('/data/goodsManage/goodsList.json')
 }

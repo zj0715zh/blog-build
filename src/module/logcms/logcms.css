@@ -1,0 +1,22 @@
+body, html {
+    background: #E8ECF0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, 'Hiragino Sans GB', 冬青黑, 'Microsoft YaHei', 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, 'Arial sans-serif';
+    -webkit-font-smoothing: antialiased;
+}
+.right_side{
+	position: absolute;
+	top: 150px;
+	bottom: 20px;
+	right: 20px;
+	left: 84px;
+	border-radius: 10px;
+	background: #fff;
+	min-width: 1000px;
+	/*min-height: 700px;*/
+	overflow: scroll;
+	overflow-x: hidden;
+}
