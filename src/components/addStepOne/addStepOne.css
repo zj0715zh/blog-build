@@ -1,0 +1,25 @@
+#addStepOne{
+
+}
+#addStepOne .steps_box{
+	padding: 1.25rem 6.125rem;
+	border-bottom: solid 1px #ededed;
+}
+#addStepOne .edite_info{
+	width: 1000px;
+	overflow: hidden;
+	margin: 40px auto;
+}
+#addStepOne .el-form--inline .el-form-item{
+	width: 484px;
+	padding-left: 80px;
+	margin-bottom: 35px;
+}
+#addStepOne .goodsDesc{
+	width:750px;
+	height:300px;
+	visibility:hidden;
+}
+#addStepOne .el-form--inline .el-form-item.goodsDescBox{
+	width: 1000px;
+}

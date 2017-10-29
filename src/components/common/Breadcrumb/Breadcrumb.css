@@ -1,0 +1,19 @@
+#Breadcrumb{
+	position: absolute;
+	top: 80px;
+	left: 64px;
+	right: 0;
+	height: 50px;
+	background: #fff;
+	padding: 0 25px;
+}
+#Breadcrumb .el-breadcrumb{
+	line-height: 50px;
+	font-size: 18px;
+	color: #000;
+}
+#Breadcrumb .el-breadcrumb i{
+	font-size: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+}

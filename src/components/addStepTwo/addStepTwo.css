@@ -1,0 +1,38 @@
+#addStepTwo{
+
+}
+#addStepTwo .steps_box{
+	padding: 1.25rem 6.125rem;
+	border-bottom: solid 1px #ededed;
+}
+#addStepTwo .prop_main{
+	width: 80%;
+	min-width: 1000px;
+	margin: 50px auto;
+}
+#addStepTwo .prop_list{
+	margin-bottom: 30px;
+}
+#addStepTwo .prop_list .table_input{
+	display: inline;
+}
+#addStepTwo .prop_list .table_input input{
+	width: 100px;
+	height: 30px;
+	margin-right: 10px;
+	text-align: center;
+}
+#addStepTwo .prop_main .prop_select .el-checkbox-group{
+	padding-left: 68px;
+}
+#addStepTwo .prop_main .prop_select .el-checkbox{
+	padding-left: 15px;
+}
+#addStepTwo .prop_main .prop_select .el-checkbox input{
+	vertical-align: middle;
+	width: 20px;
+	height: 16px;
+}
+#addStepTwo .prop_main .prop_select button[type=button]{
+	margin-left: 83px;
+}

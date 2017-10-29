@@ -1,0 +1,58 @@
+#serveManage .after_sale {
+  width: 100%;
+  padding: 1.25rem 3.125rem;
+  border-bottom: dotted 1px #999;
+  padding-bottom: 0;
+}
+
+#serveManage .el-form-item {
+  margin-right: 20px;
+}
+
+#serveManage .table_list {
+  width: 100%;
+  padding: 1.25rem 3.125rem;
+}
+
+#serveManage .pagination {
+  display: inline-block;
+  float: right;
+  margin-right: 40px;
+}
+#serveManage .el-dialog__header {
+  padding: 1.25rem 1.25rem 1.2rem;
+  border-bottom: 1px solid #ddd;
+}
+#serveManage .el-dialog__header span,#serveManage .table_list  table  thead th .cell{
+  color:#48576a
+}
+#serveManage .list_down {
+  margin: 10px 8px 0px 0px
+}
+
+#serveManage .list_down.pd10 {
+  margin-bottom: 10px
+}
+
+.tc {
+  text-align: center
+}
+
+.dialog_footer {
+  margin-bottom: 20px;
+}
+
+.dialog_footer button {
+  width: 100px;
+  margin-right: .375rem
+}
+
+#serveManage .inforlist {
+  width: 260px;
+  border: 1px solid #bfcbd9
+}
+
+.inforlist p {
+  margin: 0;
+  padding: 0px 10px;
+}

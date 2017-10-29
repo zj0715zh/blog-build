@@ -1,0 +1,22 @@
+#topMenu{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #324157;
+	padding: 0 20px;
+}
+#topMenu img{
+	width: 200px;
+	vertical-align: middle;
+}
+#topMenu .user_info{
+	float: right;
+}
+#topMenu .user_info div{
+	display: inline-block;
+	color: #fff;
+	margin-left: 10px;
+}
+#topMenu .user_info .login_out span{
+	cursor: pointer;
+}

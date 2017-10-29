@@ -1,0 +1,42 @@
+.index p{
+	margin-top:100px;
+	font-size: 50px;
+	color: #0abfff;
+	text-align: center;
+}
+.index .modules{
+	width: 100%;
+	overflow: hidden;
+}
+.index .modules .module{
+	width: 33.333%;
+	float: left;
+	padding: 5% 10%;
+	color: #fff;
+	font-size: 18px;
+	animation: scale ease 0.6s;
+	-webkit-animation: scale ease 0.6s;
+}
+.index .modules .module a:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.index .modules .module a{
+	display: block;
+	text-align: center;
+	color: #fff;
+	background: #2f72c3;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+
+@keyframes scale{
+	0%{transform: scale(0);}
+	25%{transform: scale(1.1);}
+	50%{transform: scale(0.8);}
+	75%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}

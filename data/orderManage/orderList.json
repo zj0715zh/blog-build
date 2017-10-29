@@ -1,0 +1,66 @@
+{
+  "responseCode": 1,
+  "responseMessage": "SUCCESS",
+  "tableData":[
+    {
+      "ppdOrder":"15252252525",
+      "userOrder":"343463465",
+      "username":"丽丽",
+      "address": "",
+      "ppdReceiver":"萨拉",
+      "telephone":"18558586925",
+      "information":"",
+      "sum":"￥1566",
+      "status":"已发货",
+      "downTime":"2017/02/15",
+      "startTime":"2017/02/15",
+      "supplier":"京东",
+      "other":""
+    },
+    {
+      "ppdOrder":"2343545123",
+      "userOrder":"343463465",
+      "username":"丽丽",
+      "address": "上海市普陀区金沙江路 1518 弄",
+      "ppdReceiver":"萨拉",
+      "telephone":"18558586925",
+      "information":"",
+      "sum":"￥1566",
+      "status":"已发货",
+      "downTime":"2017/02/15",
+      "startTime":"2017/02/15",
+      "supplier":"京东",
+      "other":""
+    },
+    {
+      "ppdOrder":"2343545123",
+      "userOrder":"343463465",
+      "username":"丽丽",
+      "address": "上海市普陀区金沙江路 1518 弄",
+      "ppdReceiver":"萨拉",
+      "telephone":"18558586925",
+      "information":"",
+      "sum":"￥1566",
+      "status":"已发货",
+      "downTime":"2017/02/15",
+      "startTime":"2017/02/15",
+      "supplier":"京东",
+      "other":"重复下单，下单失败"
+    },
+    {
+      "ppdOrder":"2343545123",
+      "userOrder":"343463465",
+      "username":"丽丽",
+      "address": "上海市普陀区金沙江路 1518 弄",
+      "ppdReceiver":"萨拉",
+      "telephone":"18558586925",
+      "information":"苹果（Apple）AirPods无线耳机入耳式蓝牙耳机",
+      "sum":"￥1566",
+      "status":"已发货",
+      "downTime":"",
+      "startTime":"2017/02/15",
+      "supplier":"京东",
+      "other":"重复下单，下单失败"
+    }
+  ]
+}

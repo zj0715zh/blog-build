@@ -1,0 +1,51 @@
+#orderManage .after_sale {
+  width: 100%;
+  padding: 1.25rem 3.125rem;
+  border-bottom: dotted 1px #999;
+  padding-bottom: 0;
+}
+
+#orderManage .el-form-item {
+  margin-right: 20px;
+}
+
+#orderManage .el-dialog__header {
+  padding: 1.25rem 1.25rem 1.2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+#orderManage .table_list {
+  width: 100%;
+  padding: 1.25rem 3.125rem;
+}
+
+#orderManage .el-dialog__header span, #orderManage .table_list table thead th .cell {
+  color: #48576a
+}
+
+#orderManage .pagination {
+  display: inline-block;
+  float: right;
+  margin-right: 40px;
+}
+
+#orderManage .list_down {
+  margin: 10px 8px 0px 0px
+}
+
+#orderManage .list_down.pd10 {
+  margin-bottom: 10px
+}
+
+.dialog_footer {
+  margin-bottom: 20px;
+}
+
+.tc {
+  text-align: center;
+}
+
+.dialog_footer button {
+  width: 100px;
+  margin-right: .375rem
+}

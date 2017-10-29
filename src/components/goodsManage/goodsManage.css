@@ -1,0 +1,21 @@
+#goodsManage{
+   
+}
+#goodsManage .search{
+	width: 100%;
+    padding: 1.25rem 3.125rem;
+    border-bottom: dotted 1px #999;
+    padding-bottom: 0;
+}
+#goodsManage .el-form-item{
+	margin-right: 20px;
+}
+#goodsManage .table_list{
+	width: 100%;
+    padding: 1.25rem 3.125rem;
+}
+#goodsManage .pagination{
+	display: inline-block;
+    float: right;
+    margin-right: 40px;
+}
