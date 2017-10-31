@@ -1,30 +1,30 @@
 <template>
 <section id="leftSide">
 	<div class="Collapse">
-	    <a href="javascript:;" class="btn_Collapse" @click="toggle"></a>
+	    <a href="javascript:;" class="btn_Collapse" @click="toggle">{{isCollapse?'展开':'收起'}}</a>
 	</div>
 	<el-menu default-active="1-4-1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" :collapse="isCollapse" theme="dark">
 		<a href="javascript:;" @click="toggle" style="background: #121a2c;">
 		  	<el-menu-item index="0">
-			    <i class="icon iconfont icon-shangpinguanli"></i>
+			    <i class="icon iconfont icon-github"></i>
 			    <span slot="title" style="font-size: 16px;color: #fff;">菜单管理</span>
 		  	</el-menu-item>
 	  	</a>
 	  	<a href="#goodsManage">
 		  	<el-menu-item index="1">
-			    <i class="icon iconfont icon-shangpinguanli2"></i>
+			    <i class="icon iconfont icon-aixin"></i>
 			    <span slot="title">商品管理</span>
 		  	</el-menu-item>
 	  	</a>
 	  	<a href="#orderManage">
 		  	<el-menu-item index="2">
-			    <i class="icon iconfont icon-weibiaoti3"></i>
+			    <i class="icon iconfont icon-data"></i>
 			    <span slot="title">订单管理</span>
 		  	</el-menu-item>
 	  	</a>
 	   	<a href="#serveManage">
 		  	<el-menu-item index="3">
-			    <i class="icon iconfont icon-aftersale"></i>
+			    <i class="icon iconfont icon-dianzan"></i>
 			    <span slot="title">售后管理</span>
 		  	</el-menu-item>
 	  	</a>
