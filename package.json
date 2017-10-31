@@ -34,6 +34,8 @@
     "clean-webpack-plugin": "^0.1.13",
     "connect-history-api-fallback": "^1.1.0",
     "css-loader": "^0.28.4",
+    "element-ui": "^1.4.3",
+    "babel-plugin-component": "^0.10.0",
     "enhanced-resolve": "^3.3.0",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",

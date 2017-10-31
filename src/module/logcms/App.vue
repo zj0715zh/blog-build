@@ -9,7 +9,7 @@
 		</div>
 	</div>
 </template>
-<style lang="css" src="./cms.css">
+<style lang="css" src="./logcms.css">
 </style>
 <script type="text/javascript">
 	import { mapGetters,mapState,mapActions,mapMutations } from 'vuex'
@@ -18,7 +18,7 @@
 	import Breadcrumb from 'components/common/Breadcrumb/Breadcrumb'
 	import LeftSide from 'components/common/leftSide/leftSide'
 	export default {
-		name:'weblog',
+		name:'logcms',
 		data(){
 			return {
 				
