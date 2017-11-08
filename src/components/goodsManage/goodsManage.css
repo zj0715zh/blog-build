@@ -1,21 +1,21 @@
-#goodsManage{
-   
+#addStepOne{
+
 }
-#goodsManage .search{
-	width: 100%;
-    padding: 1.25rem 3.125rem;
-    border-bottom: dotted 1px #999;
-    padding-bottom: 0;
+#addStepOne .edite_info{
+    width: 1000px;
+    overflow: hidden;
+    margin: 40px auto;
 }
-#goodsManage .el-form-item{
-	margin-right: 20px;
+#addStepOne .el-form--inline .el-form-item{
+    width: 484px;
+    padding-left: 80px;
+    margin-bottom: 35px;
 }
-#goodsManage .table_list{
-	width: 100%;
-    padding: 1.25rem 3.125rem;
+#addStepOne .goodsDesc{
+    width:750px;
+    height:300px;
+    visibility:hidden;
 }
-#goodsManage .pagination{
-	display: inline-block;
-    float: right;
-    margin-right: 40px;
+#addStepOne .el-form--inline .el-form-item.goodsDescBox{
+    width: 1000px;
 }

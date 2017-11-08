@@ -13,19 +13,7 @@
 	  	<a href="#goodsManage">
 		  	<el-menu-item index="1">
 			    <i class="icon iconfont icon-aixin"></i>
-			    <span slot="title">商品管理</span>
-		  	</el-menu-item>
-	  	</a>
-	  	<a href="#orderManage">
-		  	<el-menu-item index="2">
-			    <i class="icon iconfont icon-data"></i>
-			    <span slot="title">订单管理</span>
-		  	</el-menu-item>
-	  	</a>
-	   	<a href="#serveManage">
-		  	<el-menu-item index="3">
-			    <i class="icon iconfont icon-dianzan"></i>
-			    <span slot="title">售后管理</span>
+			    <span slot="title">日志录入</span>
 		  	</el-menu-item>
 	  	</a>
 	</el-menu>
