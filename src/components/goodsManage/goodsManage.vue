@@ -2,50 +2,22 @@
 	<section id="addStepOne">
 		<div class="edite_info">
 			<el-form :inline="true" v-loading.body="InfoLoading" element-loading-text="拼命加载中" :model="stepOneForm" ref="stepOneForm" :rules="validateRules" class="demo-form-inline">
-			  	<el-form-item label="一级分类" prop="typeOne">
+			  	<el-form-item label="标题" prop="typeOne">
 			    	<el-select v-model="stepOneForm.typeOne" placeholder="一级分类">
 			      		<el-option label="移动设备" value="shanghai"></el-option>
 			      		<el-option label="家用电器" value="beijing"></el-option>
 			    	</el-select>
 			  	</el-form-item>
-			  	<el-form-item label="二级分类" prop="typeTwo">
+			  	<el-form-item label="tag标签" prop="typeTwo">
 			    	<el-select v-model="stepOneForm.typeTwo" placeholder="二级分类">
 			      		<el-option label="手机" value="phone"></el-option>
 			      		<el-option label="平板" value="ipad"></el-option>
 			    	</el-select>
 			  	</el-form-item>
-			  	<el-form-item label="商品品牌" prop="brand">
-			    	<el-select v-model="stepOneForm.brand" placeholder="品牌">
-			      		<el-option label="苹果" value="iphone"></el-option>
-			      		<el-option label="华为" value="huawei"></el-option>
-			    	</el-select>
-			  	</el-form-item>
-			  	<el-form-item label="商品名称" prop="name">
-			    	<el-input v-model="stepOneForm.name" placeholder="商品名称"></el-input>
-			  	</el-form-item>
-			  	<el-form-item label="销售开始时间" prop="saleStartDate">
-			    	<el-date-picker
-				      v-model="stepOneForm.saleStartDate"
-				      type="datetime"
-				      placeholder="选择日期时间">
-				    </el-date-picker>
-			  	</el-form-item>
-			  	<el-form-item label="销售结束时间" prop="saleEndDate">
-			    	<el-date-picker
-				      v-model="stepOneForm.saleEndDate"
-				      type="datetime"
-				      placeholder="选择日期时间">
-				    </el-date-picker>
-			  	</el-form-item>
-			  	<el-form-item label="描述" prop="goodsDesc" class="goodsDescBox">
+			  	<el-form-item label="日志内容" prop="goodsDesc" class="goodsDescBox">
 			    	<textarea name="goodsDesc" v-model="stepOneForm.goodsDesc" class="goodsDesc">KindEditor</textarea>
 			  	</el-form-item>
 			</el-form>
-			<div class="right">
-				<el-button type="success" icon="menu" @click="returnGoodsList">返回商品列表</el-button>
-			  	<el-button type="primary" :plain="true" icon="arrow-left" disabled>上一步</el-button>
-			  	<el-button type="info" @click="nextStep('stepOneForm')">下一步<i class="el-icon-arrow-right el-icon--right"></i></el-button>
-			</div>
 		</div>
 	</section>
 </template>
