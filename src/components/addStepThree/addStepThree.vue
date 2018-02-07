@@ -11,37 +11,37 @@
 			<el-table :data="SkuTableData" border style="width: 100%" v-loading.body="goodsListLoading" element-loading-text="拼命加载中">
 			    <el-table-column align="center" prop="id" label="SKU名称" width="180"></el-table-column>
 			    <el-table-column align="center" prop="goodsName" label="库存数量" width="180">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 			    		<el-input v-model="scope.row.goodsName" class="table_input"></el-input>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" prop="brandName" label="保留数量" width="180">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 			    		<el-input v-model="scope.row.brandName" class="table_input"></el-input>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" prop="goodsType" label="价格(人民币)" width="180">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 			    		<el-input v-model="scope.row.goodsType" class="table_input"></el-input>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" prop="seller" label="是否是默认商品" width="180">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 		    			<el-checkbox v-model="isDefaultSku"></el-checkbox>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" prop="saleStart" label="重量(KG)" width="180">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 			    		<el-input v-model="scope.row.saleStart" class="table_input"></el-input>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" prop="saleEnd" label="外部参考码" width="200">
-			    	<template scope="scope">
+			    	<template slot-scope="scope">
 			    		<el-input v-model="scope.row.saleEnd" class="table_input"></el-input>
 			    	</template>
 			    </el-table-column>
 			    <el-table-column align="center" label="图片">
-			      <template scope="scope">
+			      <template slot-scope="scope">
 			        <el-button size="small" @click="EditeImg(scope.$index, scope.row)">编辑</el-button>
 			      </template>
 			    </el-table-column>

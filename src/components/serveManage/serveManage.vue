@@ -30,27 +30,27 @@
         <el-table-column align="center" prop="sum" label="订单金额" width="100"></el-table-column>
         <el-table-column align="center" prop="status" label="订单状态" width="100"></el-table-column>
         <el-table-column align="center" prop="downTime" label="下单时间" width="130">
-          <template scope="scope">
+          <template slot-scope="scope">
             <el-icon name="time"></el-icon>
             <span style="margin-left: 2px">{{scope.row.downTime}}</span>
           </template>
           s
         </el-table-column>
         <el-table-column align="center" prop="startTime" label="发货时间" width="130">
-          <template scope="scope">
+          <template slot-scope="scope">
             <el-icon name="time"></el-icon>
             <span style="margin-left: 2px">{{ scope.row.startTime }}</span>
           </template>
         </el-table-column>
         <el-table-column align="center" prop="cancelTime" label="退货时间" width="130">
-          <template scope="scope">
+          <template slot-scope="scope">
             <el-icon name="time"></el-icon>
             <span style="margin-left: 2px">{{ scope.row.cancelTime }}</span>
           </template>
         </el-table-column>
         <el-table-column align="center" prop="reason" label="拒绝理由" width="110"></el-table-column>
         <el-table-column align="center" prop="moreAction" label="更多操作" width="100">
-          <template scope="scope">
+          <template slot-scope="scope">
             <el-button size="small" @click="orderAudit(scope.$index, scope.row)" class="list_down">退货审核</el-button>
             <el-button size="small" @click="confirm(scope.$index, scope.row)" class="list_down">确认退货</el-button>
             <el-button size="small" @click="orderInfo(scope.$index, scope.row)" class="list_down pd10">退货信息</el-button>

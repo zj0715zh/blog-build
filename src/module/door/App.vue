@@ -9,10 +9,10 @@
       <div class="head_main">
         <ul class="nav left">
           <li class="index">
-            <a href="door"><i class="icon iconfont icon-cha"></i>小邹茶社</a>
+            <a href="/door"><i class="icon iconfont icon-cha"></i>小邹茶社</a>
           </li>
           <li class="weblog">
-            <a href="weblog">网络日志</a>
+            <a href="/weblog">网络日志</a>
           </li>
           <li class="blog">
             <a href="javascript:;">博客</a>

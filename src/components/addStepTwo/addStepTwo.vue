@@ -45,14 +45,14 @@
 				<el-table :data="propTableList" border v-loading.body="propListLoading" element-loading-text="拼命加载中">
 			    	<el-table-column align="center" property="propName" label="属性名" width="150"></el-table-column>
 			    	<el-table-column align="center" property="propValue" label="属性值">
-			    		<template scope="scope">
+			    		<template slot-scope="scope">
 			    			<template v-for="item in scope.row.propValue">
 			    				<el-input v-model="item.desc" :placeholder="item.desc" class="table_input"></el-input>{{item.name}}
 			    			</template>
 			    		</template>
 			    	</el-table-column>
 			    	<el-table-column align="center" label="操作" width="150">
-			    		<template scope="scope">
+			    		<template slot-scope="scope">
 			    			<template v-if="scope.row.isAdd">
 					        	<el-button @click.native.prevent="deleteRow(scope.$index, propTableList)" type="text" size="small">移除</el-button>
 			    			</template>
