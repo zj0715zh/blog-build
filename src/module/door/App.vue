@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-    <!-- <video id="bgvid" autoplay="" loop="" muted="" poster="//static.zhuwenlong.com/image/index/cover-820e030cca.jpg">
-      <source src="//static.zhuwenlong.com/video/bgvideo-0c73e2c57a.mp4" type="video/mp4">
-      <source src="//static.zhuwenlong.com/video/bgvideo-513397179e.webm" type="video/webm">
-      <source src="//static.zhuwenlong.com/video/bgvideo-5428b1617d.ogv" type="video/ogg">
-    </video> -->
     <section class="head">
       <div class="head_main">
         <ul class="nav left">
@@ -110,24 +105,24 @@
                   <div class="index-content-boxhalf">
                     <label>
                       <p>昵称/姓名：</p>
-                      <p><input id="username"></p>
+                      <p><input id="username" v-model="username"></p>
                     </label>
                   </div>
                   <div class="index-content-boxhalf">
                     <label>
                       <p>联系方式：</p>
-                      <p><input id="email"></p>
+                      <p><input id="email" v-model="email"></p>
                     </label>
                   </div>
                 </div>
                 <div class="index-content-message">
                   <label>
                     <p>内容：</p>
-                    <p><textarea id="message"></textarea></p>
+                    <p><textarea id="message" v-model="message"></textarea></p>
                   </label>
                 </div>
                 <div class="index-content-btn">
-                  <button type="submit" id="send" class="btn">Send</button>
+                  <a id="send" class="btn" @click="sendMsg">Send</a>
                 </div>
                 <span id="tips" class="index-content-tips">Message Sended</span></div>
             </form>
@@ -146,7 +141,10 @@
     name: 'app',
     data() {
       return {
-        navShow: false
+        navShow: false,
+        username: '',
+        email: '',
+        message: ''
       }
     },
     mounted() {
@@ -170,6 +168,30 @@
       },
       showQQ() {
         //显示QQ二维码
+      },
+      sendMsg(){
+        let vm = this;
+        vm.username = vm.username.replace(/(^\s+)|(\s+$)/g,"");
+        vm.email = vm.email.replace(/(^\s+)|(\s+$)/g,"");
+        vm.message = vm.message.replace(/(^\s+)|(\s+$)/g,"");
+        if(vm.message==''){
+          alert('请客官给点指点，小生感恩万分')
+          return;
+        }
+        if(vm.username==''){
+          alert('请客官留下大名，让小生我铭记在心')
+          return;
+        }
+        vm.$ajax.post('/msg/submit',{username:vm.username,email:vm.email,message:vm.message})
+        .then(response=>{
+          var data = response.data;
+          if(data.code==200){
+            alert('提交成功');
+          }else{
+            alert('客官，不好意思。服务器吃饭去了')
+          }
+        })
+        .catch(response=>{alert('客官，不好意思。服务器吃饭去了')})
       }
     }
   }

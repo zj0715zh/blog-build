@@ -3,7 +3,7 @@ if (!process.env.NODE_ENV) process.env.NODE_ENV = config.dev.env
 var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
-// var bodyParser = require('body-parser')
+var bodyParser = require('body-parser')
 var fs = require('fs')
 var opn = require('opn')
 var proxyMiddleware = require('http-proxy-middleware')
@@ -17,8 +17,8 @@ var compiler = webpack(webpackConfig)
 
 app.set('views','./views')
 app.set('view engine','ejs')
-// app.use(bodyParser.urlencoded({extended:true}))//接受form表单提交的数据
-// app.use(bodyParser.json())//接受json数据格式提交的数据
+app.use(bodyParser.urlencoded({extended:false}))//接受form表单提交的数据
+app.use(bodyParser.json())//接受json数据格式提交的数据
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
@@ -56,6 +56,7 @@ var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsS
 app.use(staticPath, express.static('./static'))
 
 app.get('/express/abc', function (req, res) {
+  console.log(req.cookies)
   res.writeHead(200, {"Content-Type": "application/json"});  
   var otherArray = ["item1", "item2"];  
   var otherObject = { item1: "item1val", item2: "item2val" };  
@@ -66,6 +67,25 @@ app.get('/express/abc', function (req, res) {
   res.end(json);
 });
 
+
+app.post('/msg/submit', function (req, res) {
+  var data = req.body;
+  if(data.username&&data.email&&data.message){
+    res.writeHead(200, {"Content-Type": "application/json"});  
+    var otherArray = ["item1", "item2"];  
+    var otherObject = { item1: "item1val", item2: "item2val" };  
+    var json = JSON.stringify({   
+      anObject: otherObject,   
+      anArray: otherArray,
+      code:200  
+    });
+    res.end(json);
+  }else{
+    res.json({code:-1,message:'内容不能为空'});
+    res.end();
+  }
+  
+});
 
 // 本地路由
 app.get('/door', function (req, res) {
