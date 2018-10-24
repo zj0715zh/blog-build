@@ -10,17 +10,17 @@
             <a href="/weblog">网络日志</a>
           </li>
           <li class="blog">
-            <a href="javascript:;">博客</a>
+            <a href="https://blog.csdn.net/itkingone">博客</a>
           </li>
           <li class="vueUI">
-            <a href="javascript:;">vue组件库</a>
+            <a href="http://47.89.249.180:8088/#/">vue组件库</a>
           </li>
           <li class="msg_board">
-            <a href="javascript:;">留言板</a>
+            <a href="javascript:;">留言板(待开发)</a>
           </li>
         </ul>
         <ul class="heroRank right">
-          <a href="javascript:;">青史留名</a>
+          <a href="javascript:;">青史留名(找大牛中)</a>
         </ul>
       </div>
     </section>
@@ -32,10 +32,11 @@
       <transition name="slide-fade">
         <ul v-if="navShow" class="subNav">
           <li><a href="/"><i class="icon iconfont icon-cha"></i>&nbsp;&nbsp;小邹茶社</a></li>
-          <li><a href="">网络日志</a></li>
-          <li><a href="">vue组件库</a></li>
-          <li><a href="">留言</a></li>
-          <li><a href="">青史留名</a></li>
+          <li><a href="/weblog">网络日志</a></li>
+          <li><a href="https://blog.csdn.net/itkingone">博客</a></li>
+          <li><a href="http://47.89.249.180:8088/#/">vue组件库</a></li>
+          <li><a href="javascript:;">留言板(待开发)</a></li>
+          <li><a href="javascript:;">青史留名(找大牛中)</a></li>
         </ul>
       </transition>
     </section>
