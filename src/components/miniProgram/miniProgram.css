@@ -12,3 +12,9 @@
 	display: block;
 	margin: 0 auto;
 }
+.miniBox {
+	padding: 0 20px;
+    min-width: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

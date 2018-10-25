@@ -6,7 +6,7 @@ module.exports = {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
-    htmlRoot: path.resolve(__dirname, '../../PA/views'),//页面的产出目录
+    htmlRoot: path.resolve(__dirname, '../../www.itzoujie.com/views'),//页面的产出目录
     // assetsSubDirectory: 'www.baidu.com',//assetsSubDirectory和assetsPublicPath决定了生成的静态文件的相对路径
     // assetsPublicPath: 'http://',
     assetsSubDirectory:'',

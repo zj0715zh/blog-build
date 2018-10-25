@@ -55,8 +55,8 @@ webpack(webpackConfig, function (err, stats) {
     }
     console.log('文件本地部署完成')
     rm('-rf', modulePath)
-    rm('-rf', path.resolve(__dirname, '../../PA/static/*'))
-    cmd.get('cp -r '+config.build.assetsRoot+'/* '+path.resolve(__dirname, '../../PA/static'),function(err, data, stderr){
+    rm('-rf', path.resolve(__dirname, '../../www.itzoujie.com/static/*'))
+    cmd.get('cp -r '+config.build.assetsRoot+'/* '+path.resolve(__dirname, '../../www.itzoujie.com/static'),function(err, data, stderr){
       if(err){
         console.log(err)
         return;
