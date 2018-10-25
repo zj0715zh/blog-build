@@ -86,7 +86,9 @@ app.post('/msg/submit', function (req, res) {
   }
   
 });
-
+app.get('/', function (req, res) {
+  res.redirect('/module/door.html');
+});
 // 本地路由
 app.get('/door', function (req, res) {
   res.redirect('/module/door.html');

@@ -6,14 +6,17 @@
           <li class="index">
             <a href="/door"><i class="icon iconfont icon-cha"></i>小邹茶社</a>
           </li>
-          <li :class="active=='weblog'?'weblog active':'weblog'">
-            <a href="/weblog">网络日志</a>
+          <li class="vueUI">
+            <a href="http://nvui.itzoujie.com">vue组件库</a>
           </li>
           <li class="blog">
             <a href="https://blog.csdn.net/itkingone">博客</a>
           </li>
-          <li :class="active=='vueUI'?'vueUI active':'vueUI'">
-            <a href="http://47.89.249.180:8088/#/">vue组件库</a>
+          <li :class="active=='miniProgram'?'miniProgram active':'miniProgram'">
+            <a href="/weblog#/miniprogram">小程序</a>
+          </li>
+          <li :class="active=='weblog'?'weblog active':'weblog'">
+            <a href="/weblog">网络日志</a>
           </li>
           <li :class="active=='msg_board'?'msg_board active':'msg_board'">
             <a href="javascript:;">留言板(待开发)</a>

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import StoriesView from 'components/StoriesView/StoriesView'
 import WeblogList from 'components/weblogList/weblogList'
+import MiniProgram from 'components/miniProgram/miniProgram'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
       path: '/',
       name: 'loglist',
       component: WeblogList
+    },
+    {
+      path: '/miniprogram',
+      name: 'miniprogram',
+      component: MiniProgram
     }
   ]
 })

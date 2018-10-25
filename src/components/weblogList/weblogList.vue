@@ -1,5 +1,7 @@
 <template>
   <section class="webloglist">
+    <top-nav active="weblog"></top-nav>
+    <pull-down></pull-down>
     <ul class="loglist">
       <a href="#" class="logLink">
         <li class="item">
@@ -44,6 +46,8 @@
 </template>
 
 <script>
+  import TopNav from 'components/topNav/topNav'
+  import PullDown from 'components/pullDown/pullDown'
   export default {
     name: 'weblogList',
     computed: {
@@ -53,6 +57,10 @@
         }
         return 'Hanks10100'
       }
+    },
+    components:{
+      TopNav,
+      PullDown
     },
     mounted(){
       
