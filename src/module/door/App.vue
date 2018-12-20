@@ -54,9 +54,10 @@
         <div class="contactLogo">
           <a href="https://github.com/zj0715zh/" class="github"><i class="icon iconfont icon-github"></i></a>
           <a href="http://blog.csdn.net/itKingOne" class="blog"><i class="icon iconfont icon-blog"></i></a>
-          <a href="javascript:;" class="weixin"><i class="icon iconfont icon-weixin" @click="showWechat"></i></a>
+          <a href="javascript:;" class="weixin"><i class="icon iconfont icon-weixin" @touchstart="showWXlogo=true" @touchend="showWXlogo=false"  @mouseenter="showWXlogo=true" @mouseleave="showWXlogo=false"></i></a>
           <a href="javascript:;" class="qq"><i class="icon iconfont icon-qq" @click="showQQ"></i></a>
         </div>
+        <div class="showWX" v-show="showWXlogo"><img src="./images/QR.jpg" class="icon iconfont icon-qq"></img></div>
       </section>
       <section class="AboutMe">
         <div class="textTitle">About Me</div>
@@ -72,15 +73,17 @@
             <div class="img">
               <!-- <img src="./images/idnetity.jpg"> -->
             </div>
-            <p>itJoy，常用名邹杰。</p>
-            <p>高级动物，人科，属马，公元1990年诞生于银河系-地球（中国-浙江-温州）。</p><p>性情爽朗，喜欢运动。特别爱好羽毛球、篮球、台球，擅长羽毛球，业余也会用农药打发下时间。</p>
+            <p>喜欢折腾的前端开发</p>
+            <p>2014年接触前端，在一家创业公司实习。2015年离开宁波，来到上海。2016年进入平安刷了1年多副本，2017年进入拍拍贷接着刷。</p>
+            <p>已习得技能 HTML(5), CSS(3), JAVASCRIPT, NODE.JS, VUE, MONGODB, NGINX, LINUX。</p>
           </section>
           <section class="dream">
            <div class="img">
               <!-- <img src="./images/idnetity.jpg"> -->
             </div>
-            <p>itJoy，常用名邹杰。</p>
-            <p>高级动物，人科，属马，公元1990年诞生于银河系-地球（中国-浙江-温州）。</p><p>性情爽朗，喜欢运动。特别爱好羽毛球、篮球、台球，擅长羽毛球，业余也会用农药打发下时间。</p>
+            <p>羽毛球的狂热爱好者</p>
+            <p>本人特别喜欢羽毛球，因为喜欢所以高中、大学都加入了羽毛球校队。</p>
+            <p>打羽毛球能让我感受到快乐，那种全身心的放松能让我工作时的疲惫感消失殆尽。平时也会去社会上藏家一些比赛，偶尔还能拿拿奖，很开心！</p>
           </section>
         </div>
         </section>
@@ -146,6 +149,8 @@
     data() {
       return {
         navShow: false,
+        showWXlogo:false,
+        showQQlogo:false,
         username: '',
         email: '',
         message: ''
@@ -167,12 +172,6 @@
       
     },
     methods: {
-      showWechat() {
-        //展示微信二维码
-      },
-      showQQ() {
-        //显示QQ二维码
-      },
       sendMsg(){
         let vm = this;
         vm.username = vm.username.replace(/(^\s+)|(\s+$)/g,"");
