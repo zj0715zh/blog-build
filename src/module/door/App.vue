@@ -55,7 +55,7 @@
           <a href="https://github.com/zj0715zh/" class="github"><i class="icon iconfont icon-github"></i></a>
           <a href="http://blog.csdn.net/itKingOne" class="blog"><i class="icon iconfont icon-blog"></i></a>
           <a href="javascript:;" class="weixin"><i class="icon iconfont icon-weixin" @touchstart="showWXlogo=true" @touchend="showWXlogo=false"  @mouseenter="showWXlogo=true" @mouseleave="showWXlogo=false"></i></a>
-          <a href="javascript:;" class="qq"><i class="icon iconfont icon-qq" @click="showQQ"></i></a>
+          <a href="javascript:;" class="qq"><i class="icon iconfont icon-qq"></i></a>
         </div>
         <div class="showWX" v-show="showWXlogo"><img src="./images/QR.jpg" class="icon iconfont icon-qq"></img></div>
       </section>
